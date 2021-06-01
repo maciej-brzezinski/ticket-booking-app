@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface ScreeningRepository extends JpaRepository<Screening, Long> {
 
-
+    List<Screening> findByStartTimeBetween(LocalDateTime dateTimeFrom, LocalDateTime dateTimeTo);
 }
 
