@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import ticket_booking_service.dtos.ScreeningDetailsDto;
 import ticket_booking_service.dtos.ScreeningDto;
+import ticket_booking_service.exceptions.ScreeningNotFoundException;
 import ticket_booking_service.models.Screening;
 import ticket_booking_service.repositories.ScreeningRepository;
 
