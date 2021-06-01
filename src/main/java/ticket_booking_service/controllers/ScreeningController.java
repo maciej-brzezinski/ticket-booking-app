@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import ticket_booking_service.dtos.ScreeningDetailsDto;
 import ticket_booking_service.dtos.ScreeningDto;
-import ticket_booking_service.exceptions.ScreeningNotFoundException;
 import ticket_booking_service.models.Screening;
 import ticket_booking_service.repositories.ScreeningRepository;
 
@@ -58,7 +57,7 @@ public class ScreeningController {
     @GetMapping("/screenings/{id}")
     public ScreeningDetailsDto oneDetail(@PathVariable Long id) {
 
-        Screening screening = screeningRepository.findById(id).get();
+        Screening screening = screeningRepository.findById(id).orElseThrow(() -> new ScreeningNotFoundException(id));
         ScreeningDetailsDto screeningDetails = new ScreeningDetailsDto(
                 screening.getId(),
                 screening.getRoom().getId(),
