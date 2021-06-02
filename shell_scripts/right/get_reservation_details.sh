@@ -1,0 +1,1 @@
+curl -v localhost:8080/reservations/1 | json_pp

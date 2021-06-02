@@ -1,0 +1,1 @@
+curl -X POST localhost:8080/reservations -H 'Content-type:application/json' -d '{"screeningId": 1, "firstName": "Jan", "lastName": "Kowalski-Nowak", "ticketId": 1, "seatIds": [1, 2, 35, 36]}' | json_pp

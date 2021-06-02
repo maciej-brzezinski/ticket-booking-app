@@ -1,0 +1,1 @@
+curl -v localhost:8080/screenings/1 | json_pp
