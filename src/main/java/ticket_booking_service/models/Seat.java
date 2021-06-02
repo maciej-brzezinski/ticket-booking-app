@@ -63,4 +63,12 @@ public class Seat extends BaseModel {
         this.rowNo = rowNo;
     }
 
+    @Override
+    public String toString() {
+        return "Seat{" +
+                ", reservation=" + reservation +
+                ", columnNo=" + columnNo +
+                ", rowNo=" + rowNo +
+                '}';
+    }
 }

@@ -89,5 +89,14 @@ public class Reservation extends BaseModel {
         this.lastName = lastName;
     }
 
-
+    @Override
+    public String toString() {
+        return "Reservation{" +
+                "screening=" + screening +
+                ", ticket=" + ticket +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", expirationDate=" + expirationDate +
+                '}';
+    }
 }

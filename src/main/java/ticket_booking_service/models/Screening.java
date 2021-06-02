@@ -69,5 +69,12 @@ public class Screening extends BaseModel {
         this.startTime = startTime;
     }
 
-
+    @Override
+    public String toString() {
+        return "Screening{" +
+                "movie=" + movie +
+                ", room=" + room +
+                ", startTime=" + startTime +
+                '}';
+    }
 }

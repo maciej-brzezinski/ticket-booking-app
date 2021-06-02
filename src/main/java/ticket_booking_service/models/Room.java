@@ -60,4 +60,11 @@ public class Room extends BaseModel {
         this.rowCount = rowCount;
     }
 
+    @Override
+    public String toString() {
+        return "Room{" +
+                "columnCount=" + columnCount +
+                ", rowCount=" + rowCount +
+                '}';
+    }
 }

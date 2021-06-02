@@ -48,5 +48,11 @@ public class Movie extends BaseModel {
         this.screenings = screenings;
     }
 
-
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "title='" + title + '\'' +
+                ", durationInMinutes=" + durationInMinutes +
+                '}';
+    }
 }

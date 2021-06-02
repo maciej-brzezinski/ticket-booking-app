@@ -9,5 +9,5 @@ import java.util.List;
 import java.util.Optional;
 
 public interface RoomRepository extends JpaRepository<Room, Long> {
-    List<Screening> findByStartTimeBetween(LocalDateTime dateTimeFrom, LocalDateTime dateTimeTo);
+
 }

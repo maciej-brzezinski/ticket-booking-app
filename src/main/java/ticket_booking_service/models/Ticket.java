@@ -33,8 +33,13 @@ public class Ticket extends BaseModel {
         this.price = price;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "type='" + type + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
 
 
